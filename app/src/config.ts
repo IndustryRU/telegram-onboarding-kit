@@ -128,7 +128,7 @@ export default defineConfig({
         {
           media: {
             type: 'sticker',
-            src: import('./assets/stickers/fox/chpic.su_-_ItsLisVK_016.tgs'),
+            src: import('./assets/stickers/fox/chpic.su_-_ItsLisVK_013.tgs'),
             size: 250,
           },
           shape: 'square',
@@ -150,7 +150,7 @@ export default defineConfig({
       path: '/paywall',
       media: {
         type: 'sticker',
-        src: import('./assets/stickers/fox/chpic.su_-_ItsLisVK_013.tgs'),
+        src: import('./assets/stickers/fox/chpic.su_-_ItsLisVK_016.tgs'),
         size: 150,
       },
       shape: 'square',
