@@ -10,44 +10,29 @@ export default defineConfig({
         {
           media: {
             type: 'sticker',
-            src: import('./assets/stickers/duck_hello.tgs'),
+            src: import('./assets/stickers/fox/chpic.su_-_ItsLisVK_022.tgs'),
             size: 250,
           },
           shape: 'square',
           pagination: 'count',
-          title: 'Welcome-11 to Telegram Onboarding Kit',
+          title: 'Добро пожаловать в систему MarketBox',
           description:
-            "Create stunning onboarding and paywall for your Telegram Bot using the full power of Mini Apps<br><br>It's <b>simple</b>, <b>fast</b>, highly <b>customizable</b> and <a href='https://github.com/Easterok/telegram-onboarding-kit' target='_blank'>open-source</a>!",
-          button: 'Next',
+            "Воспользуйтесь этим телеграм-приложением для активного взаимодействия с нашей командой и получения оперативной информации о продвижении работ по Вашему проекту<br><br>Это <b>просто</b>, <b>быстро</b>, <b>легко</b> и можно разобраться <a href='#' target='_blank'>без инструкции</a>!",
+          button: 'Далее',
         },
 
         // image
         {
           media: {
             type: 'image',
-            src: import('./assets/img/durov.webp'),
+            src: import('./assets/img/marketing_strategy.jpg'),
           },
           shape: 'rounded',
           pagination: 'count',
-          title: 'Onboarding supports many types of content',
+          title: 'Графическое оформление',
           description:
-            "Here you can see <b>Image</b>. But it's just the beginning...",
-          button: 'Next',
-        },
-
-        // sticker
-        {
-          media: {
-            type: 'sticker',
-            src: import('./assets/stickers/duck_love.tgs'),
-            size: 250,
-          },
-          shape: 'square',
-          pagination: 'count',
-          title: 'Telegram stickers',
-          description:
-            'Just download any <b>.tgs</b> sticker from Telegram and use it in your onboardings',
-          button: 'Next',
+            "Позволяет сделать акцент на  <b>Услуге</b>, или другом контексте...",
+          button: 'Далее',
         },
 
         // form
@@ -55,31 +40,31 @@ export default defineConfig({
           extends: 'form', // note, it's important to extend from 'form' here
           media: {
             type: 'sticker',
-            src: import('./assets/stickers/duck_spy.tgs'),
+            src: import('./assets/stickers/fox/chpic.su_-_ItsLisVK_044.tgs'),
             size: 150,
           },
           shape: 'square',
           pagination: 'count',
-          title: 'Forms',
-          description: 'User fills in the form – the bot receives the data',
+          title: 'Формы',
+          description: 'Клиент заполняет форму – бот получает данные и можно обработать их, передать в <b>трекер</b>, отправить уведомление и прочие полезные действия...',
           form: [
             {
               id: 'text_from_form',
-              placeholder: 'Text input',
+              placeholder: 'Ввод текста',
               type: 'text',
             },
             {
               id: 'number_from_form',
-              placeholder: 'Number input',
+              placeholder: 'Ввод числа',
               type: 'number',
             },
             {
               id: 'checkbox_from_form',
-              placeholder: 'Checkbox',
+              placeholder: 'Чекбокс',
               type: 'checkbox',
             },
           ],
-          button: 'Next',
+          button: 'Далее',
         },
 
         // video
@@ -92,24 +77,24 @@ export default defineConfig({
           },
           shape: 'rounded',
           pagination: 'count',
-          title: 'Videos',
+          title: 'Видео-контент',
           description:
-            "Typically, video starts <b>automatically</b><br><br>However, on iOS, it will only autoplay upon any prior tap on the page ('Next' button doesn't count). If video doesn't autoplay, user will see preview and pretty animation, inviting them to tap to play the video",
-          button: 'Next',
+            "Можно сделать обучающий контент - <b>видеобиблиотеку</b> или видеопрезентации услуг, либо чего-то другого<br><br>Что позволит заинтересовать клиента и ознакомить с предложениями без необходимости посещения сайта.",
+          button: 'Далее',
         },
 
         // list
         {
           media: {
             type: 'sticker',
-            src: import('./assets/stickers/duck_juggling.tgs'),
+            src: import('./assets/stickers/fox/chpic.su_-_ItsLisVK_008.tgs'),
             size: 150,
           },
           shape: 'square',
           pagination: 'count',
-          title: 'Lists',
+          title: 'Списки',
           description:
-            'Lists can be used to showcase <b>features</b> of your product. Items support customizable icons',
+            'Списки можно использовать для демонстрации услуг или характеристик продукта. Элементы поддерживают настраиваемые значки',
           list: [
             {
               media: {
@@ -117,7 +102,7 @@ export default defineConfig({
                 src: import('./assets/icons/guide.svg'),
                 size: 30,
               },
-              text: 'Some cool feature',
+              text: 'Какая-то крутая функция',
             },
             {
               media: {
@@ -125,7 +110,7 @@ export default defineConfig({
                 src: import('./assets/icons/track.svg'),
                 size: 30,
               },
-              text: 'Some very cool feature',
+              text: 'Очень крутая функция',
             },
             {
               media: {
@@ -133,69 +118,26 @@ export default defineConfig({
                 src: import('./assets/icons/time.svg'),
                 size: 30,
               },
-              text: 'Some extremely cool feature',
+              text: 'Некоторые чрезвычайно крутые функции',
             },
           ],
-          button: 'Next',
-        },
-
-        // "everything is customizable" slide
-        {
-          media: {
-            type: 'sticker',
-            src: import('./assets/stickers/duck_xray.tgs'),
-            size: 250,
-          },
-          shape: 'square',
-          pagination: 'count',
-          title: 'Everything is customizable',
-          description: '',
-          textAlign: 'center',
-          list: [
-            '<b>CSS styles</b>: extend primary colors from Telegram or set yours',
-            'Button text and actions (look down)',
-            'Use our carefully crafted <b>presets</b> or easily create your own',
-          ],
-          button: 'Super-Duper Next',
-        },
-
-        // slide with other features
-        {
-          media: {
-            type: 'sticker',
-            src: import('./assets/stickers/duck_cool.tgs'),
-            size: 150,
-          },
-          shape: 'square',
-          pagination: 'count',
-          title: 'Some other features:',
-          description: '',
-          list: [
-            'One-click 0$ <b>deploy</b> on GitHub Pages',
-            'Language and currency localization',
-            'Buttons with <b>haptic</b> feedback',
-            'Content pre-loading for high speed',
-            '<b>Low-code</b> approach to building onboardings',
-            'Many examples/presets',
-            "And many more... (see <a href='https://github.com/Easterok/telegram-onboarding-kit' target='_blank'>GitHub</a>)",
-          ],
-          button: 'Next',
+          button: 'Далее',
         },
 
         // go to paywall slide
         {
           media: {
             type: 'sticker',
-            src: import('./assets/stickers/duck_knife.tgs'),
+            src: import('./assets/stickers/fox/chpic.su_-_ItsLisVK_016.tgs'),
             size: 250,
           },
           shape: 'square',
           pagination: 'count',
           textAlign: 'center',
-          title: 'But onboarding slides are not enough...',
-          description: "Let's go to Paywall",
+          title: 'Но, это еще не все!',
+          description: "Можно организовать платный доступ или оформление подписки...",
           button: {
-            content: 'Go to Paywall',
+            content: 'Перейти к оформлению услуги',
             to: '/paywall',
           },
         },
@@ -208,51 +150,51 @@ export default defineConfig({
       path: '/paywall',
       media: {
         type: 'sticker',
-        src: import('./assets/stickers/duck_money.tgs'),
+        src: import('./assets/stickers/fox/chpic.su_-_ItsLisVK_013.tgs'),
         size: 150,
       },
       shape: 'square',
-      title: 'Your beautiful Paywall',
+      title: 'Оформить подписку на услуги',
       list: [
-        'Adjustable product cards',
-        '<b>👛 Wallet Pay</b> and <b>Telegram Payments</b> ready. Add custom methods easily',
-        'Subscriptions or One-time payments',
+        'Можно настроить карточки продуктов',
+        '<b>👛 Wallet Pay</b> и <b>Telegram Payments</b> можно подключить без лишних заморочек',
+        'Можно организовать как подписки, так и разовые платежи',
       ],
       products: [
         {
           id: '1_month_subscription',
-          title: '1 month subscription',
-          description: '2$/month',
+          title: 'Подписка на месяц',
+          description: '1000$/месяц',
           discount: '',
-          price: 2,
+          price: 1000,
         },
         {
           id: '1_year_subscription',
-          title: '1 year subscription',
-          description: '1$/month',
-          discount: 'Discount 50%',
-          price: 12,
+          title: 'Подписка на 1 год',
+          description: '3600$/месяц',
+          discount: 'Скидка 30%',
+          price: 3600,
         },
         {
           id: 'lifetime_access',
-          title: 'Lifetime access',
-          description: '20$ once',
-          discount: 'Best offer',
-          price: 20,
+          title: 'Пожизненный доступ',
+          description: '20000$',
+          discount: 'Лучшее предложение',
+          price: 20000,
         },
       ],
-      mainButtonText: 'Buy for {price}',
+      mainButtonText: 'Купить за {price}',
       popup: {
         // popup for payment methods choice
         type: 'web',
       },
       links: [
         {
-          text: 'Privacy policy',
+          text: 'Политика конфиденциальности',
           href: 'https://google.com',
         },
         {
-          text: 'Terms of use',
+          text: 'Условия использования',
           href: 'https://google.com',
         },
       ],
