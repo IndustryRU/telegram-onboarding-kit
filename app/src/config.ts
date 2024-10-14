@@ -71,7 +71,7 @@ export default defineConfig({
         {
           media: {
             type: 'video',
-            src: import('./assets/videos/spongebob.mp4'),
+            src: import('./assets/videos/tags.mp4'),
             poster: import('./assets/img/spongebob_poster.webp'),
             style: 'aspect-ratio: 400/287', // here we manually set video aspect-ratio (default is 16:9)
           },
