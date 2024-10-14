@@ -4,6 +4,8 @@
       v-if="loaded"
       ref="videoRef"
       playsinline
+      muted
+      loop
       :controls="true"
       :class="$style.video"
       :poster="loadedPoster"
@@ -84,7 +86,7 @@ watch(
   top: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+//  z-index: -1;
   background: transparent;
 }
 
