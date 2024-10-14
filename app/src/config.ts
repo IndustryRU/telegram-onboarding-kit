@@ -17,10 +17,53 @@ export default defineConfig({
           pagination: 'count',
           title: 'Добро пожаловать в систему MarketBox',
           description:
-            "Воспользуйтесь этим телеграм-приложением для активного взаимодействия с нашей командой и получения оперативной информации о продвижении работ по Вашему проекту<br><br>Это <b>просто</b>, <b>быстро</b>, <b>легко</b> и можно разобраться <a href='#' target='_blank'>без инструкции</a>!",
+            "Воспользуйтесь этим телеграм-приложением для активного взаимодействия с нашей командой и получения оперативной информации о продвижении работ по Вашему проекту<br><br>Это <b>просто</b>, <b>быстро</b>, <b>легко</b> и можно разобраться <a href='/?page=1'>без инструкции</a>!",
           button: 'Далее',
         },
 
+        // Инструкции
+        {
+          media: {
+            type: 'sticker',
+            src: import('./assets/stickers/fox/chpic.su_-_ItsLisVK_044.tgs'),
+            size: 150,
+          },
+          shape: 'square',
+          pagination: 'count',
+          title: 'Видеоинструкция',
+          description:
+            'Инструкция по работе с системой разбита на логические видеоподкасты продолжительностью в несколько минут. Рекомендуется последовательно просмотреть весь материал, а затем, при необходимости, возвращаться к конкретным записям, чтобы освежить информацию или уточнить детали.',
+          list: [
+            {
+              media: {
+                type: 'icon',
+                src: import('./assets/icons/num/2/number_1.svg'),
+                
+                size: 30,
+              },
+              text: "<a href='https://yandex.ru' target='_blank'>Создание нового проекта</a>",
+            },
+            {
+              media: {
+                type: 'icon',
+                src: import('./assets/icons/num/2/number_2.svg'),
+                size: 30,
+              },
+              text: "<a href='https://yandex.ru' target='_blank'>О проекте</a>",
+            },
+            {
+              media: {
+                type: 'icon',
+                src: import('./assets/icons/num/2/number_3.svg'),
+                size: 30,
+              },
+              text: "<a href='https://yandex.ru' target='_blank'>Вехи (ключевые этапы проекта)</a>",
+            },
+          ],
+          button: 'Далее',
+        },
+
+/* 
         // image
         {
           media: {
@@ -140,7 +183,7 @@ export default defineConfig({
             content: 'Перейти к оформлению услуги',
             to: '/paywall',
           },
-        },
+        }, */
       ],
     },
 
