@@ -59,6 +59,102 @@ export default defineConfig({
               },
               text: "<a href='https://marketbox.team/' target='_blank'>Вехи (ключевые этапы проекта)</a>",
             },
+            {
+              media: {
+                type: 'icon',
+                src: import('./assets/icons/num/2/number_4.svg'),
+                size: 30,
+              },
+              text: "<a href='https://marketbox.team/' target='_blank'>Создание задач и обязательные поля</a>",
+            },
+            {
+              media: {
+                type: 'icon',
+                src: import('./assets/icons/num/2/number_5.svg'),
+                size: 30,
+              },
+              text: "<a href='https://marketbox.team/' target='_blank'>Список задач проекта</a>",
+            },
+            {
+              media: {
+                type: 'icon',
+                src: import('./assets/icons/num/2/number_6.svg'),
+                size: 30,
+              },
+              text: "<a href='https://marketbox.team/' target='_blank'>Диаграмма Ганта</a>",
+            },
+            {
+              media: {
+                type: 'icon',
+                src: import('./assets/icons/num/2/number_7.svg'),
+                size: 30,
+              },
+              text: "<a href='https://marketbox.team/' target='_blank'>Доска задач проекта</a>",
+            },
+            {
+              media: {
+                type: 'icon',
+                src: import('./assets/icons/num/2/number_8.svg'),
+                size: 30,
+              },
+              text: "<a href='https://marketbox.team/' target='_blank'>Доска MarketBox задачи (SCRUM)</a>",
+            },
+            {
+              media: {
+                type: 'icon',
+                src: import('./assets/icons/num/2/number_9.svg'),
+                size: 30,
+              },
+              text: "<a href='https://marketbox.team/' target='_blank'>Эффективное распределение задач по методологии Agile</a>",
+            },
+            {
+              media: {
+                type: 'icon',
+                src: import('./assets/icons/num/2/number_10.svg'),
+                size: 30,
+              },
+              text: "<a href='https://marketbox.team/' target='_blank'>SCRUM. Бэклог</a>",
+            },
+            {
+              media: {
+                type: 'icon',
+                src: import('./assets/icons/num/2/number_11.svg'),
+                size: 30,
+              },
+              text: "<a href='https://marketbox.team/' target='_blank'>SCRUM. Спринты</a>",
+            },
+            {
+              media: {
+                type: 'icon',
+                src: import('./assets/icons/num/2/number_12.svg'),
+                size: 30,
+              },
+              text: "<a href='https://marketbox.team/' target='_blank'>SCRUM. Приоритет</a>",
+            },
+            {
+              media: {
+                type: 'icon',
+                src: import('./assets/icons/num/2/number_13.svg'),
+                size: 30,
+              },
+              text: "<a href='https://marketbox.team/' target='_blank'>SCRUM. Распределение между исполнителями</a>",
+            },
+            {
+              media: {
+                type: 'icon',
+                src: import('./assets/icons/num/2/number_14.svg'),
+                size: 30,
+              },
+              text: "<a href='https://marketbox.team/' target='_blank'>SCRUM. Покер</a>",
+            },
+            {
+              media: {
+                type: 'icon',
+                src: import('./assets/icons/num/2/number_15.svg'),
+                size: 30,
+              },
+              text: "<a href='https://marketbox.team/' target='_blank'>Портфель проектов (группы проектов)</a>",
+            },
           ],
           button: 'Далее',
         },
