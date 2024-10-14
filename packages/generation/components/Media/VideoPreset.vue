@@ -4,9 +4,7 @@
       v-if="loaded"
       ref="videoRef"
       playsinline
-      muted
-      loop
-      :controls="false"
+      :controls="true"
       :class="$style.video"
       :poster="loadedPoster"
     >
