@@ -65,7 +65,7 @@ export default defineConfig({
                 src: import('./assets/icons/num/2/number_4.svg'),
                 size: 30,
               },
-              text: "<a href='https://marketbox.team/' target='_blank'>Создание задач и обязательные поля</a>",
+              text: "<a href='https://cloud.mail.ru/public/Ts2n/3VUZM21D2' target='_blank'>Создание задач и обязательные поля</a>",
             },
             {
               media: {
