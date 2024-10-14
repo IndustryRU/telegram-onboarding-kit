@@ -17,7 +17,7 @@ export default defineConfig({
           pagination: 'count',
           title: 'Добро пожаловать в систему MarketBox',
           description:
-            "Воспользуйтесь этим телеграм-приложением для активного взаимодействия с нашей командой и получения оперативной информации о продвижении работ по Вашему проекту<br><br>Это <b>просто</b>, <b>быстро</b>, <b>легко</b> и можно разобраться <a href='/?page=1'>без инструкции</a>!",
+            "Воспользуйтесь этим телеграм-приложением для активного взаимодействия с нашей командой и получения оперативной информации о продвижении работ по Вашему проекту<br><br>Это <b>просто</b>, <b>быстро</b>, <b>легко</b> и можно разобраться <a href='?page=1'>без инструкции</a>!",
           button: 'Далее',
         },
 
@@ -41,7 +41,7 @@ export default defineConfig({
                 
                 size: 30,
               },
-              text: "<a href='https://yandex.ru' target='_blank'>Создание нового проекта</a>",
+              text: "<a href='https://marketbox.team/' target='_blank'>Создание нового проекта</a>",
             },
             {
               media: {
@@ -49,7 +49,7 @@ export default defineConfig({
                 src: import('./assets/icons/num/2/number_2.svg'),
                 size: 30,
               },
-              text: "<a href='https://yandex.ru' target='_blank'>О проекте</a>",
+              text: "<a href='https://marketbox.team/' target='_blank'>О проекте</a>",
             },
             {
               media: {
@@ -57,7 +57,7 @@ export default defineConfig({
                 src: import('./assets/icons/num/2/number_3.svg'),
                 size: 30,
               },
-              text: "<a href='https://yandex.ru' target='_blank'>Вехи (ключевые этапы проекта)</a>",
+              text: "<a href='https://marketbox.team/' target='_blank'>Вехи (ключевые этапы проекта)</a>",
             },
           ],
           button: 'Далее',
