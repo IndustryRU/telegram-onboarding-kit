@@ -41,15 +41,16 @@ export default defineConfig({
                 
                 size: 30,
               },
-              text: "<a href='https://marketbox.team/' target='_blank'>Создание нового проекта</a>",
+              text: "<a href='https://disk.yandex.ru/i/8K_fTBPW4_a3NQ' target='_blank'>Обзор web-интерфейса</a>",
             },
             {
               media: {
                 type: 'icon',
                 src: import('./assets/icons/num/2/number_2.svg'),
+                
                 size: 30,
               },
-              text: "<a href='https://marketbox.team/' target='_blank'>О проекте</a>",
+              text: "<a href='https://disk.yandex.ru/i/eUEFSK27zsqWIg' target='_blank'>Создание нового проекта</a>",
             },
             {
               media: {
@@ -57,7 +58,7 @@ export default defineConfig({
                 src: import('./assets/icons/num/2/number_3.svg'),
                 size: 30,
               },
-              text: "<a href='https://marketbox.team/' target='_blank'>Вехи (ключевые этапы проекта)</a>",
+              text: "<a href='https://disk.yandex.ru/i/2MFtYDNks7iY3A' target='_blank'>Вехи (ключевые этапы проекта)</a>",
             },
             {
               media: {
@@ -65,7 +66,7 @@ export default defineConfig({
                 src: import('./assets/icons/num/2/number_4.svg'),
                 size: 30,
               },
-              text: "<a href='https://cloud.mail.ru/public/Ts2n/3VUZM21D2' target='_blank'>Создание задач и обязательные поля</a>",
+              text: "<a href='https://disk.yandex.ru/i/nxfLusvdl6iLrw' target='_blank'>Создание задач</a>",
             },
             {
               media: {
@@ -73,7 +74,7 @@ export default defineConfig({
                 src: import('./assets/icons/num/2/number_5.svg'),
                 size: 30,
               },
-              text: "<a href='https://marketbox.team/' target='_blank'>Список задач проекта</a>",
+              text: "<a href='https://disk.yandex.ru/i/7vuTE9R5ZqDGrg' target='_blank'>Список задач проекта</a>",
             },
             {
               media: {
@@ -81,7 +82,7 @@ export default defineConfig({
                 src: import('./assets/icons/num/2/number_6.svg'),
                 size: 30,
               },
-              text: "<a href='https://marketbox.team/' target='_blank'>Диаграмма Ганта</a>",
+              text: "<a href='https://disk.yandex.ru/i/_4J_sQZZT39KKw' target='_blank'>Диаграмма Ганта</a>",
             },
             {
               media: {
@@ -89,7 +90,7 @@ export default defineConfig({
                 src: import('./assets/icons/num/2/number_7.svg'),
                 size: 30,
               },
-              text: "<a href='https://marketbox.team/' target='_blank'>Доска задач проекта</a>",
+              text: "<a href='https://disk.yandex.ru/i/LGlfKJlXCoxIoQ' target='_blank'>Доска задач</a>",
             },
             {
               media: {
@@ -97,7 +98,7 @@ export default defineConfig({
                 src: import('./assets/icons/num/2/number_8.svg'),
                 size: 30,
               },
-              text: "<a href='https://marketbox.team/' target='_blank'>Доска MarketBox задачи (SCRUM)</a>",
+              text: "<a href='https://disk.yandex.ru/i/bl_8HUh8R3Wn6A' target='_blank'>Варианты работы с задачами</a>",
             },
             {
               media: {
@@ -105,9 +106,33 @@ export default defineConfig({
                 src: import('./assets/icons/num/2/number_9.svg'),
                 size: 30,
               },
-              text: "<a href='https://marketbox.team/' target='_blank'>Эффективное распределение задач по методологии Agile</a>",
+              text: "<a href='https://disk.yandex.ru/i/6FECcAGlyoc38w' target='_blank'>Работа со страницы задач</a>",
             },
             {
+              media: {
+                type: 'icon',
+                src: import('./assets/icons/num/2/number_10.svg'),
+                size: 30,
+              },
+              text: "<a href='https://marketbox.team/' target='_blank'>Работа на доске (KANBAN) - скоро</a>",
+            },
+            {
+              media: {
+                type: 'icon',
+                src: import('./assets/icons/num/2/number_11.svg'),
+                size: 30,
+              },
+              text: "<a href='https://marketbox.team/' target='_blank'>Доска MarketBox задачи (SCRUM) - скоро</a>",
+            },
+            {
+              media: {
+                type: 'icon',
+                src: import('./assets/icons/num/2/number_12.svg'),
+                size: 30,
+              },
+              text: "<a href='https://marketbox.team/' target='_blank'>Эффективное распределение задач по методологии Agile - скоро</a>",
+            },
+            /* {
               media: {
                 type: 'icon',
                 src: import('./assets/icons/num/2/number_10.svg'),
@@ -154,7 +179,7 @@ export default defineConfig({
                 size: 30,
               },
               text: "<a href='https://marketbox.team/' target='_blank'>Портфель проектов (группы проектов)</a>",
-            },
+            }, */
           ],
           button: 'Далее',
         },
