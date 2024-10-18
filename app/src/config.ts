@@ -41,7 +41,7 @@ export default defineConfig({
                 
                 size: 40,
               },
-              text: "<a color: green; font-size: 1.5em' href='https://disk.yandex.ru/i/2HFj3Ygwu3dBuA' target='_blank'>Быстрый старт</a>",
+              text: "<a color: green; font-size: 2em' href='https://disk.yandex.ru/i/2HFj3Ygwu3dBuA' target='_blank'>Быстрый старт</a>",
             },
             {
               media: {
