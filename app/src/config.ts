@@ -39,9 +39,9 @@ export default defineConfig({
                 type: 'icon',
                 src: import('./assets/icons/num/2/number_1.svg'),
                 
-                size: 30,
+                size: 40,
               },
-              text: "<a href='https://disk.yandex.ru/i/8K_fTBPW4_a3NQ' target='_blank'>Обзор web-интерфейса</a>",
+              text: "<a color: green; font-size: 1.5em' href='https://disk.yandex.ru/i/2HFj3Ygwu3dBuA' target='_blank'>Быстрый старт</a>",
             },
             {
               media: {
@@ -50,15 +50,16 @@ export default defineConfig({
                 
                 size: 30,
               },
-              text: "<a href='https://disk.yandex.ru/i/eUEFSK27zsqWIg' target='_blank'>Создание нового проекта</a>",
+              text: "<a href='https://disk.yandex.ru/i/8K_fTBPW4_a3NQ' target='_blank'>Обзор web-интерфейса</a>",
             },
             {
               media: {
                 type: 'icon',
                 src: import('./assets/icons/num/2/number_3.svg'),
+                
                 size: 30,
               },
-              text: "<a href='https://disk.yandex.ru/i/2MFtYDNks7iY3A' target='_blank'>Вехи (ключевые этапы проекта)</a>",
+              text: "<a href='https://disk.yandex.ru/i/eUEFSK27zsqWIg' target='_blank'>Создание нового проекта</a>",
             },
             {
               media: {
@@ -66,7 +67,7 @@ export default defineConfig({
                 src: import('./assets/icons/num/2/number_4.svg'),
                 size: 30,
               },
-              text: "<a href='https://disk.yandex.ru/i/nxfLusvdl6iLrw' target='_blank'>Создание задач</a>",
+              text: "<a href='https://disk.yandex.ru/i/2MFtYDNks7iY3A' target='_blank'>Вехи (ключевые этапы проекта)</a>",
             },
             {
               media: {
@@ -74,7 +75,7 @@ export default defineConfig({
                 src: import('./assets/icons/num/2/number_5.svg'),
                 size: 30,
               },
-              text: "<a href='https://disk.yandex.ru/i/7vuTE9R5ZqDGrg' target='_blank'>Список задач проекта</a>",
+              text: "<a href='https://disk.yandex.ru/i/nxfLusvdl6iLrw' target='_blank'>Создание задач</a>",
             },
             {
               media: {
@@ -82,7 +83,7 @@ export default defineConfig({
                 src: import('./assets/icons/num/2/number_6.svg'),
                 size: 30,
               },
-              text: "<a href='https://disk.yandex.ru/i/_4J_sQZZT39KKw' target='_blank'>Диаграмма Ганта</a>",
+              text: "<a href='https://disk.yandex.ru/i/7vuTE9R5ZqDGrg' target='_blank'>Список задач проекта</a>",
             },
             {
               media: {
@@ -90,7 +91,7 @@ export default defineConfig({
                 src: import('./assets/icons/num/2/number_7.svg'),
                 size: 30,
               },
-              text: "<a href='https://disk.yandex.ru/i/LGlfKJlXCoxIoQ' target='_blank'>Доска задач</a>",
+              text: "<a href='https://disk.yandex.ru/i/_4J_sQZZT39KKw' target='_blank'>Диаграмма Ганта</a>",
             },
             {
               media: {
@@ -98,7 +99,7 @@ export default defineConfig({
                 src: import('./assets/icons/num/2/number_8.svg'),
                 size: 30,
               },
-              text: "<a href='https://disk.yandex.ru/i/bl_8HUh8R3Wn6A' target='_blank'>Варианты работы с задачами</a>",
+              text: "<a href='https://disk.yandex.ru/i/LGlfKJlXCoxIoQ' target='_blank'>Доска задач</a>",
             },
             {
               media: {
@@ -106,7 +107,7 @@ export default defineConfig({
                 src: import('./assets/icons/num/2/number_9.svg'),
                 size: 30,
               },
-              text: "<a href='https://disk.yandex.ru/i/6FECcAGlyoc38w' target='_blank'>Работа со страницы задач</a>",
+              text: "<a href='https://disk.yandex.ru/i/bl_8HUh8R3Wn6A' target='_blank'>Варианты работы с задачами</a>",
             },
             {
               media: {
@@ -114,7 +115,7 @@ export default defineConfig({
                 src: import('./assets/icons/num/2/number_10.svg'),
                 size: 30,
               },
-              text: "<a href='https://marketbox.team/' target='_blank'>Работа на доске (KANBAN) - скоро</a>",
+              text: "<a href='https://disk.yandex.ru/i/6FECcAGlyoc38w' target='_blank'>Работа со страницы задач</a>",
             },
             {
               media: {
@@ -122,12 +123,20 @@ export default defineConfig({
                 src: import('./assets/icons/num/2/number_11.svg'),
                 size: 30,
               },
-              text: "<a href='https://marketbox.team/' target='_blank'>Доска MarketBox задачи (SCRUM) - скоро</a>",
+              text: "<a href='https://marketbox.team/' target='_blank'>Работа на доске (KANBAN) - скоро</a>",
             },
             {
               media: {
                 type: 'icon',
                 src: import('./assets/icons/num/2/number_12.svg'),
+                size: 30,
+              },
+              text: "<a href='https://marketbox.team/' target='_blank'>Доска MarketBox задачи (SCRUM) - скоро</a>",
+            },
+            {
+              media: {
+                type: 'icon',
+                src: import('./assets/icons/num/2/number_13.svg'),
                 size: 30,
               },
               text: "<a href='https://marketbox.team/' target='_blank'>Эффективное распределение задач по методологии Agile - скоро</a>",
