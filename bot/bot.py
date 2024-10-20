@@ -71,9 +71,11 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     text = (
         f"♥️ Привет! Я бот системы <a href='https://marketbox.team/'>Market Box</a>\n"
         f"\n"
-        f"Уже сейчас Вам доступны <b>Инструкции</b> по работе с ситстемой. \n\nЛучше всего взаимодействовать со мной через 📱 мобильное устройство\n"
+        f"Уже сейчас Вам доступны <b>Инструкции</b> по работе с системой. \n"
         f"\n"
         f"Постепенно станут доступны и другие <b>полезные</b> функции\n"
+        f"\n"
+        f"Лучше всего взаимодействовать со мной через 📱 мобильное устройство\n"
     )
 
     user_data = get_user_data(update.effective_user)
@@ -89,7 +91,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
                 ),
             ),
             KeyboardButton(
-                text="💃 Кабинет исполнителя",
+                text="💻 Кабинет исполнителя",
                 web_app=WebAppInfo(
                     url=add_get_params_to_url("https://marketbox.team/", user_data)
                 ),
@@ -102,30 +104,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
                     )
                 ),
             ),
-            """ KeyboardButton(
-                text="🧚‍♂️ AI Tales Onboarding",
-                web_app=WebAppInfo(
-                    url=add_get_params_to_url(
-                        "https://tok-wondertales.netlify.app", user_data
-                    )
-                ),
-            ),
-            KeyboardButton(
-                text="🔐 VPN Onboarding",
-                web_app=WebAppInfo(
-                    url=add_get_params_to_url(
-                        "https://tok-vpn.netlify.app", user_data
-                    )
-                ),
-            ),
-            KeyboardButton(
-                text="🧠 ChatGPT Onboarding",
-                web_app=WebAppInfo(
-                    url=add_get_params_to_url(
-                        "https://tok-chatgpt.netlify.app", user_data
-                    )
-                ),
-            ), """
+            
         ]
     )
 
