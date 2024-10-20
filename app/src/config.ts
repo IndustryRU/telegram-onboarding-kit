@@ -41,7 +41,7 @@ export default defineConfig({
                 
                 size: 40,
               },
-              text: "<a color: green; font-size: 2em' href='https://disk.yandex.ru/i/2HFj3Ygwu3dBuA' target='_blank'>Быстрый старт</a>",
+              text: "<a style='color: green; font-size: 20px' href='https://disk.yandex.ru/i/2HFj3Ygwu3dBuA' target='_blank'>Быстрый старт</a>",
             },
             {
               media: {
@@ -123,7 +123,7 @@ export default defineConfig({
                 src: import('./assets/icons/num/2/number_11.svg'),
                 size: 30,
               },
-              text: "<a href='https://marketbox.team/' target='_blank'>Работа на доске (KANBAN) - скоро</a>",
+              text: "<a href='https://disk.yandex.ru/i/qRcDSmzlqa2lXA' target='_blank'>Работа на доске проекта (KANBAN)</a>",
             },
             {
               media: {
@@ -131,7 +131,7 @@ export default defineConfig({
                 src: import('./assets/icons/num/2/number_12.svg'),
                 size: 30,
               },
-              text: "<a href='https://marketbox.team/' target='_blank'>Доска MarketBox задачи (SCRUM) - скоро</a>",
+              text: "<a href='https://disk.yandex.ru/i/JfisPgnQGZhZpA' target='_blank'>Работа на доске MarketBox задачи (SCRUM)</a>",
             },
             {
               media: {
@@ -139,39 +139,7 @@ export default defineConfig({
                 src: import('./assets/icons/num/2/number_13.svg'),
                 size: 30,
               },
-              text: "<a href='https://marketbox.team/' target='_blank'>Эффективное распределение задач по методологии Agile - скоро</a>",
-            },
-            /* {
-              media: {
-                type: 'icon',
-                src: import('./assets/icons/num/2/number_10.svg'),
-                size: 30,
-              },
-              text: "<a href='https://marketbox.team/' target='_blank'>SCRUM. Бэклог</a>",
-            },
-            {
-              media: {
-                type: 'icon',
-                src: import('./assets/icons/num/2/number_11.svg'),
-                size: 30,
-              },
-              text: "<a href='https://marketbox.team/' target='_blank'>SCRUM. Спринты</a>",
-            },
-            {
-              media: {
-                type: 'icon',
-                src: import('./assets/icons/num/2/number_12.svg'),
-                size: 30,
-              },
-              text: "<a href='https://marketbox.team/' target='_blank'>SCRUM. Приоритет</a>",
-            },
-            {
-              media: {
-                type: 'icon',
-                src: import('./assets/icons/num/2/number_13.svg'),
-                size: 30,
-              },
-              text: "<a href='https://marketbox.team/' target='_blank'>SCRUM. Распределение между исполнителями</a>",
+              text: "<a href='https://disk.yandex.ru/i/zQQtEoGw0A3w-A' target='_blank'>Эффективное распределение задач по методологии Agile</a>",
             },
             {
               media: {
@@ -179,8 +147,9 @@ export default defineConfig({
                 src: import('./assets/icons/num/2/number_14.svg'),
                 size: 30,
               },
-              text: "<a href='https://marketbox.team/' target='_blank'>SCRUM. Покер</a>",
-            },
+              text: "<a href='https://disk.yandex.ru/i/EGlvAVyoh-GzFw' target='_blank'>Покер планирования - оценка трудоемкости</a>",
+            }
+            /*,
             {
               media: {
                 type: 'icon',
