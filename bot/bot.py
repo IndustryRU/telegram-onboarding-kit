@@ -71,9 +71,9 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     text = (
         f"♥️ Привет! Я бот системы <a href='https://marketbox.team/'>Market Box</a>\n"
         f"\n"
-        f"Уже сейчас Вам доступны <b>Инструкции</b> по работе с ситстемой. Лучше всего взаимодействовать со мной через 📱 мобильное устройство\n"
+        f"Уже сейчас Вам доступны <b>Инструкции</b> по работе с ситстемой. \n\nЛучше всего взаимодействовать со мной через 📱 мобильное устройство\n"
         f"\n"
-        f"Но, постепенно станут доступны и другие <b>полезные</b> функции\n"
+        f"Постепенно станут доступны и другие <b>полезные</b> функции\n"
     )
 
     user_data = get_user_data(update.effective_user)
@@ -81,28 +81,28 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     reply_markup = ReplyKeyboardMarkup.from_column(
         [
             KeyboardButton(
-                text="🌈 Base Onboarding",
+                text="ℹ️ Инструкции по работе с системой",
                 web_app=WebAppInfo(
                     url=add_get_params_to_url(
-                        "https://easterok.github.io/telegram-onboarding-kit", user_data
+                        "https://industryru.github.io/telegram-onboarding-kit/", user_data
                     )
                 ),
             ),
             KeyboardButton(
-                text="💃 Fashion AI Onboarding",
+                text="💃 Кабинет исполнителя",
                 web_app=WebAppInfo(
-                    url=add_get_params_to_url("https://tok-ai.netlify.app", user_data)
+                    url=add_get_params_to_url("#", user_data)
                 ),
             ),
             KeyboardButton(
-                text="🧘 Meditation Onboarding",
+                text="🧘 Кабинет клиента",
                 web_app=WebAppInfo(
                     url=add_get_params_to_url(
-                        "https://tok-meditation.netlify.app", user_data
+                        "#", user_data
                     )
                 ),
             ),
-            KeyboardButton(
+            """ KeyboardButton(
                 text="🧚‍♂️ AI Tales Onboarding",
                 web_app=WebAppInfo(
                     url=add_get_params_to_url(
@@ -125,7 +125,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
                         "https://tok-chatgpt.netlify.app", user_data
                     )
                 ),
-            ),
+            ), """
         ]
     )
 
