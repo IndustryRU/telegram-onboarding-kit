@@ -69,11 +69,11 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     user_data = get_user_data(update.effective_user)
 
     text = (
-        f"♥️ Привет! Я бот системы <a href='https://marketbox.team/'>Market Box</a>\n"
+        f"♥️ Hi! I'm demo bot for <a href='https://github.com/Easterok/telegram-onboarding-kit'>Telegram Onboarding Kit</a>\n"
         f"\n"
-        f"Уже сейчас Вам доступны <b>Инструкции</b> по работе с ситстемой. Лучше всего взаимодействовать со мной через 📱 мобильное устройство\n"
+        f"Below you can see demo onboardings <b>created with our kit</b>. It's better to you watch them from 📱 mobile device\n"
         f"\n"
-        f"Но, постепенно станут доступны и другие <b>полезные</b> функции\n"
+        f"Your language code: <b>{user_data['language_code']}</b>\n"
     )
 
     user_data = get_user_data(update.effective_user)
