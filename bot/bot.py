@@ -91,14 +91,14 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
             KeyboardButton(
                 text="💃 Кабинет исполнителя",
                 web_app=WebAppInfo(
-                    url=add_get_params_to_url("#", user_data)
+                    url=add_get_params_to_url("https://marketbox.team/", user_data)
                 ),
             ),
             KeyboardButton(
                 text="🧘 Кабинет клиента",
                 web_app=WebAppInfo(
                     url=add_get_params_to_url(
-                        "#", user_data
+                        "https://marketbox.team/", user_data
                     )
                 ),
             ),
