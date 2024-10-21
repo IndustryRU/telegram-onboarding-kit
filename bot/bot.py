@@ -69,7 +69,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     user_data = get_user_data(update.effective_user)
 
     text = (
-        f"♥️ Привет! Я бот системы <a href='https://marketbox.team/'>Market Box</a>\n"
+        f"♥️ Привет! Я бот системы <a href='https://marketbox.team/'>MarketBox</a>\n"
         f"\n"
         f"Уже сейчас Вам доступны <b>Инструкции</b> по работе с системой. \n"
         f"\n"
@@ -98,6 +98,14 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
             ),
             KeyboardButton(
                 text="🧘 Кабинет клиента",
+                web_app=WebAppInfo(
+                    url=add_get_params_to_url(
+                        "https://marketbox.team/", user_data
+                    )
+                ),
+            ),
+            KeyboardButton(
+                text="❓ О MarketBox",
                 web_app=WebAppInfo(
                     url=add_get_params_to_url(
                         "https://marketbox.team/", user_data
