@@ -91,9 +91,9 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
                 ),
             ),
             KeyboardButton(
-                text="💻 Кабинет исполнителя",
+                text="💻 Заявка на регистрацию в системе",
                 web_app=WebAppInfo(
-                    url=add_get_params_to_url("https://marketbox.team/", user_data)
+                    url=add_get_params_to_url("https://forms.yandex.ru/cloud/67115c19c417f35cfa217d7b/", user_data)
                 ),
             ),
             KeyboardButton(
