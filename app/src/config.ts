@@ -6,7 +6,7 @@ export default defineConfig({
   pages: [
     {
       slides: [
-        // intro
+        // Быстрый старт
         {
           media: {
             type: 'sticker',
@@ -18,7 +18,7 @@ export default defineConfig({
           title: 'Добро пожаловать в систему MarketBox!',
           
           description:
-            "Чтобы оперативно приступить к выполнению работ в системе, посмотрите короткую видеоинстукцию <b>Быстрый старт</b>.<br><br>Это поможет начать работу <b>просто</b>, <b>быстро</b> и <b>легко!</b><br><br>По мере получения навыков и опыта работы с системой изучайте подробные видеоматериалы и повышайте свою эффективность!",
+            "Чтобы оперативно приступить к выполнению работ в системе, посмотрите краткую видеоинстукцию <b>Быстрый старт</b>.<br><br>Это поможет начать работу <b>просто</b>, <b>быстро</b> и <b>легко!</b><br><br>По мере получения навыков и опыта работы с системой изучайте подробные видеоматериалы и повышайте свою эффективность!",
           list: [
             {
               media: {
@@ -35,6 +35,7 @@ export default defineConfig({
         },
 
         // Инструкции
+        // Исполнителям
         {
           media: {
             type: 'sticker',
@@ -43,23 +44,14 @@ export default defineConfig({
           },
           shape: 'square',
           pagination: 'count',
-          title: 'Видеоинструкция',
+          title: 'Видеоинструкция для исполнителей',
           description:
-            'Инструкция по работе с системой разбита на логические видеоподкасты продолжительностью в несколько минут. Рекомендуется последовательно просмотреть весь материал, а затем, при необходимости, возвращаться к конкретным записям, чтобы освежить информацию или уточнить детали.',
+            'В данном разделе собран основной материал, который потребуется исполнителям для работы в системе MarketBox.',
           list: [
             {
               media: {
                 type: 'icon',
                 src: import('./assets/icons/num/2/number_1.svg'),
-                
-                size: 40,
-              },
-              text: "<a style='color: green; font-size: 20px' href='https://disk.yandex.ru/i/2HFj3Ygwu3dBuA' target='_blank'>Быстрый старт</a>",
-            },
-            {
-              media: {
-                type: 'icon',
-                src: import('./assets/icons/num/2/number_2.svg'),
                 
                 size: 30,
               },
@@ -68,7 +60,73 @@ export default defineConfig({
             {
               media: {
                 type: 'icon',
+                src: import('./assets/icons/num/2/number_2.svg'),
+                size: 30,
+              },
+              text: "<a href='https://disk.yandex.ru/i/LGlfKJlXCoxIoQ' target='_blank'>Доска задач</a>",
+            },
+            {
+              media: {
+                type: 'icon',
                 src: import('./assets/icons/num/2/number_3.svg'),
+                size: 30,
+              },
+              text: "<a href='https://disk.yandex.ru/i/bl_8HUh8R3Wn6A' target='_blank'>Варианты работы с задачами</a>",
+            },
+            {
+              media: {
+                type: 'icon',
+                src: import('./assets/icons/num/2/number_4.svg'),
+                size: 30,
+              },
+              text: "<a href='https://disk.yandex.ru/i/6FECcAGlyoc38w' target='_blank'>Работа со страницы задач</a>",
+            },
+            {
+              media: {
+                type: 'icon',
+                src: import('./assets/icons/num/2/number_5.svg'),
+                size: 30,
+              },
+              text: "<a href='https://disk.yandex.ru/i/qRcDSmzlqa2lXA' target='_blank'>Работа на доске проекта (KANBAN)</a>",
+            },
+            {
+              media: {
+                type: 'icon',
+                src: import('./assets/icons/num/2/number_6.svg'),
+                size: 30,
+              },
+              text: "<a href='https://disk.yandex.ru/i/JfisPgnQGZhZpA' target='_blank'>Работа на доске MarketBox задачи (SCRUM)</a>",
+            },
+          ],
+          button: 'Далее',
+        },
+
+        // Менеджер и распределитель
+        {
+          media: {
+            type: 'sticker',
+            src: import('./assets/stickers/fox/chpic.su_-_ItsLisVK_044.tgs'),
+            size: 150,
+          },
+          shape: 'square',
+          pagination: 'count',
+          title: 'Видеоинструкция для менеджеров и распределителей',
+          description:
+            'Полная инструкция по работе с системой разбита на логические видеоподкасты продолжительностью в несколько минут. <br><br>Рекомендуется последовательно просмотреть весь материал, а затем, при необходимости, возвращаться к конкретным записям, чтобы освежить информацию или уточнить детали.',
+          list: [
+            {
+              media: {
+                type: 'icon',
+                src: import('./assets/icons/num/2/number_1.svg'),
+                
+                size: 30,
+              },
+              text: "<a href='https://disk.yandex.ru/i/8K_fTBPW4_a3NQ' target='_blank'>Обзор web-интерфейса</a>",
+            },
+            {
+              media: {
+                type: 'icon',
+                src: import('./assets/icons/num/2/number_2.svg'),
                 
                 size: 30,
               },
@@ -77,7 +135,7 @@ export default defineConfig({
             {
               media: {
                 type: 'icon',
-                src: import('./assets/icons/num/2/number_4.svg'),
+                src: import('./assets/icons/num/2/number_3.svg'),
                 size: 30,
               },
               text: "<a href='https://disk.yandex.ru/i/2MFtYDNks7iY3A' target='_blank'>Вехи (ключевые этапы проекта)</a>",
@@ -85,7 +143,7 @@ export default defineConfig({
             {
               media: {
                 type: 'icon',
-                src: import('./assets/icons/num/2/number_5.svg'),
+                src: import('./assets/icons/num/2/number_4.svg'),
                 size: 30,
               },
               text: "<a href='https://disk.yandex.ru/i/nxfLusvdl6iLrw' target='_blank'>Создание задач</a>",
@@ -93,7 +151,7 @@ export default defineConfig({
             {
               media: {
                 type: 'icon',
-                src: import('./assets/icons/num/2/number_6.svg'),
+                src: import('./assets/icons/num/2/number_5.svg'),
                 size: 30,
               },
               text: "<a href='https://disk.yandex.ru/i/7vuTE9R5ZqDGrg' target='_blank'>Список задач проекта</a>",
@@ -101,7 +159,7 @@ export default defineConfig({
             {
               media: {
                 type: 'icon',
-                src: import('./assets/icons/num/2/number_7.svg'),
+                src: import('./assets/icons/num/2/number_6.svg'),
                 size: 30,
               },
               text: "<a href='https://disk.yandex.ru/i/_4J_sQZZT39KKw' target='_blank'>Диаграмма Ганта</a>",
@@ -109,7 +167,7 @@ export default defineConfig({
             {
               media: {
                 type: 'icon',
-                src: import('./assets/icons/num/2/number_8.svg'),
+                src: import('./assets/icons/num/2/number_7.svg'),
                 size: 30,
               },
               text: "<a href='https://disk.yandex.ru/i/LGlfKJlXCoxIoQ' target='_blank'>Доска задач</a>",
@@ -117,7 +175,7 @@ export default defineConfig({
             {
               media: {
                 type: 'icon',
-                src: import('./assets/icons/num/2/number_9.svg'),
+                src: import('./assets/icons/num/2/number_8.svg'),
                 size: 30,
               },
               text: "<a href='https://disk.yandex.ru/i/bl_8HUh8R3Wn6A' target='_blank'>Варианты работы с задачами</a>",
@@ -125,7 +183,7 @@ export default defineConfig({
             {
               media: {
                 type: 'icon',
-                src: import('./assets/icons/num/2/number_10.svg'),
+                src: import('./assets/icons/num/2/number_9.svg'),
                 size: 30,
               },
               text: "<a href='https://disk.yandex.ru/i/6FECcAGlyoc38w' target='_blank'>Работа со страницы задач</a>",
@@ -133,7 +191,7 @@ export default defineConfig({
             {
               media: {
                 type: 'icon',
-                src: import('./assets/icons/num/2/number_11.svg'),
+                src: import('./assets/icons/num/2/number_10.svg'),
                 size: 30,
               },
               text: "<a href='https://disk.yandex.ru/i/qRcDSmzlqa2lXA' target='_blank'>Работа на доске проекта (KANBAN)</a>",
@@ -141,7 +199,7 @@ export default defineConfig({
             {
               media: {
                 type: 'icon',
-                src: import('./assets/icons/num/2/number_12.svg'),
+                src: import('./assets/icons/num/2/number_11.svg'),
                 size: 30,
               },
               text: "<a href='https://disk.yandex.ru/i/JfisPgnQGZhZpA' target='_blank'>Работа на доске MarketBox задачи (SCRUM)</a>",
@@ -149,7 +207,7 @@ export default defineConfig({
             {
               media: {
                 type: 'icon',
-                src: import('./assets/icons/num/2/number_13.svg'),
+                src: import('./assets/icons/num/2/number_12.svg'),
                 size: 30,
               },
               text: "<a href='https://disk.yandex.ru/i/zQQtEoGw0A3w-A' target='_blank'>Эффективное распределение задач по методологии Agile</a>",
@@ -157,23 +215,14 @@ export default defineConfig({
             {
               media: {
                 type: 'icon',
-                src: import('./assets/icons/num/2/number_14.svg'),
+                src: import('./assets/icons/num/2/number_13.svg'),
                 size: 30,
               },
               text: "<a href='https://disk.yandex.ru/i/EGlvAVyoh-GzFw' target='_blank'>Покер планирования - оценка трудоемкости</a>",
             }
-            /*,
-            {
-              media: {
-                type: 'icon',
-                src: import('./assets/icons/num/2/number_15.svg'),
-                size: 30,
-              },
-              text: "<a href='https://marketbox.team/' target='_blank'>Портфель проектов (группы проектов)</a>",
-            }, */
           ],
-          button: 'Далее',
-        },
+          button: '',
+        },        
 
 /* 
         // image
