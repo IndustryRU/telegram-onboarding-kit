@@ -93,14 +93,14 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
             KeyboardButton(
                 text="💻 Заявка на регистрацию в системе",
                 web_app=WebAppInfo(
-                    url=add_get_params_to_url("https://forms.yandex.ru/cloud/67115c19c417f35cfa217d7b/", user_data)
+                    url=add_get_params_to_url("https://forms.yandex.ru/cloud/67160daee010db024de89cb0/?iframe=1", user_data)
                 ),
             ),
             KeyboardButton(
-                text="🧘 Кабинет клиента",
+                text="✍️ Создать задачу",
                 web_app=WebAppInfo(
                     url=add_get_params_to_url(
-                        "https://marketbox.team/", user_data
+                        "https://forms.yandex.ru/cloud/671613e0068ff00274e053ba/", user_data
                     )
                 ),
             ),
@@ -122,6 +122,36 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         parse_mode=ParseMode.HTML,
         disable_web_page_preview=True,
     )
+
+async def instruction(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    user_data = get_user_data(update.effective_user)
+
+    text = (
+        f"Инструкция по работе с системой <a href='https://marketbox.team/'>MarketBox</a>\n"        
+    )
+
+    user_data = get_user_data(update.effective_user)
+
+    reply_markup = ReplyKeyboardMarkup.from_column(
+        [
+            KeyboardButton(
+                text="ℹ️ Инструкции по работе с системой",
+                web_app=WebAppInfo(
+                    url=add_get_params_to_url(
+                        "https://industryru.github.io/telegram-onboarding-kit/", user_data
+                    )
+                ),
+            ),
+        ]
+    )
+
+    await update.effective_message.reply_text(
+        text=text,
+        reply_markup=reply_markup,
+        parse_mode=ParseMode.HTML,
+        disable_web_page_preview=True,
+    )
+
 
 
 async def get_data_from_mini_app(
