@@ -4,9 +4,11 @@
     "main": "./index.ts",
     "types": "./index.ts",
     "dependencies": {
+        "@actions/artifact": "1.1.2",
         "@tok/i18n": "*",
         "@tok/telegram-ui": "*",
         "@tok/ui": "*",
+        "sharp": "0.32.6",
         "vue": "^3.3.4",
         "vue-router": "^4.2.5"
     },
@@ -15,9 +17,9 @@
         "@tok/tsconfig": "*",
         "@types/node": "^20.8.0",
         "@types/pako": "^1.0.1",
-        "@vitejs/plugin-vue": "^4.2.3",
+        "@vitejs/plugin-vue": "^5.2.3",
         "pako": "1.0.11",
-        "vite": "^4.4.9",
+        "vite": "^6.3.3",
         "vite-svg-loader": "^4.0.0"
     }
 }
