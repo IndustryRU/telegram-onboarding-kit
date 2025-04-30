@@ -347,7 +347,7 @@ export default defineConfig({
           },
         }, 
       ],
-    },  */
+    },  */ 
     {
       slides: [ 
         {
