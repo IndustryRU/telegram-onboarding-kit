@@ -349,7 +349,7 @@ export default defineConfig({
       ],
     },  */
     {
-      slides: [
+      slides: [ 
         {
           extends: 'action_slide',
           title: 'Re-dress photos with AI',
