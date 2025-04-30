@@ -69,11 +69,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     user_data = get_user_data(update.effective_user)
 
     text = (
-        f"♥️ Привет! Я бот системы <a href='https://marketbox.team/'>MarketBox</a>\n"
-        f"\n"
-        f"Уже сейчас Вам доступны <b>Инструкции</b> по работе с системой. \n"
-        f"\n"
-        f"Постепенно станут доступны и другие <b>полезные</b> функции\n"
+        f"♥️ Привет! Добро пожаловать в Кафе у моря <a href='https://yalta-fresh.ru/'>YALTA FRESH</a>\n"
         f"\n"
         f"Лучше всего взаимодействовать со мной через 📱 мобильное устройство\n"
     )
@@ -83,7 +79,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     reply_markup = ReplyKeyboardMarkup.from_column(
         [
             KeyboardButton(
-                text="ℹ️ Инструкции по работе с системой",
+                text="🗒 Меню YALTA FRESH",
                 web_app=WebAppInfo(
                     url=add_get_params_to_url(
                         "https://industryru.github.io/telegram-onboarding-kit/", user_data
@@ -91,24 +87,32 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
                 ),
             ),
             KeyboardButton(
-                text="💻 Заявка на регистрацию в системе",
+                text="✍️ Сделать онлайн предзаказ",
                 web_app=WebAppInfo(
-                    url=add_get_params_to_url("https://forms.yandex.ru/cloud/67160daee010db024de89cb0/?iframe=1", user_data)
+                    url=add_get_params_to_url("https://forms.yandex.ru/cloud/68111da390fa7b25283b4f5b/", user_data)
                 ),
             ),
             KeyboardButton(
-                text="✍️ Создать задачу",
+                text="ℹ️ Информация для Вас",
                 web_app=WebAppInfo(
                     url=add_get_params_to_url(
-                        "https://forms.yandex.ru/cloud/671613e0068ff00274e053ba/", user_data
+                        "https://industryru.github.io/telegram-onboarding-kit/", user_data
                     )
                 ),
             ),
             KeyboardButton(
-                text="❓ О MarketBox",
+                text="⭐️ Оставить отзыв / предложение",
                 web_app=WebAppInfo(
                     url=add_get_params_to_url(
-                        "https://marketbox.team/", user_data
+                        "https://forms.yandex.ru/cloud/681172ec505690ca72036f1b", user_data
+                    )
+                ),
+            ),
+            KeyboardButton(
+                text="❓ О YALTA FRESH",
+                web_app=WebAppInfo(
+                    url=add_get_params_to_url(
+                        "https://yalta-fresh.ru/", user_data
                     )
                 ),
             ),
@@ -135,10 +139,68 @@ async def instruction(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
     reply_markup = ReplyKeyboardMarkup.from_column(
         [
             KeyboardButton(
-                text="ℹ️ Инструкции по работе с системой",
+                text="1️⃣ Быстрый старт",
+                web_app=WebAppInfo(
+                    url="https://industryru.github.io/telegram-onboarding-kit/"
+                ),
+            ),
+            KeyboardButton(
+                text="2️⃣ Для исполнителей",
+                web_app=WebAppInfo(
+                    url="https://industryru.github.io/telegram-onboarding-kit/?page=1"
+                ),
+            ),
+            KeyboardButton(
+                text="3️⃣ Для менеджеров и распределителей",
+                web_app=WebAppInfo(
+                    url="https://industryru.github.io/telegram-onboarding-kit/?page=2"
+                ),
+            ),
+        ]
+    )
+
+    await update.effective_message.reply_text(
+        text=text,
+        reply_markup=reply_markup,
+        parse_mode=ParseMode.HTML,
+        disable_web_page_preview=True,
+    )
+
+async def task(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    user_data = get_user_data(update.effective_user)
+
+
+    text = (
+        f"Создавать задачи и заметки могут только зарегистрированые пользователи системы <a href='https://marketbox.team/'>MarketBox</a> с соответствующими правами доступа\n"        
+        f"\n"
+        f"Нажмите ниже на кнопку ✍️ Создать задачу, при необходимости войдите в систему, заполните форму формирования задачи и подтвердите кнопкой Создать задачу\n"  
+    )
+
+    user_data = get_user_data(update.effective_user)
+
+    reply_markup = ReplyKeyboardMarkup.from_column(
+        [
+            KeyboardButton(
+                text="✍️ Создать задачу",
                 web_app=WebAppInfo(
                     url=add_get_params_to_url(
-                        "https://industryru.github.io/telegram-onboarding-kit/", user_data
+                        "https://forms.yandex.ru/cloud/671613e0068ff00274e053ba/", user_data
+                    )
+                ),
+            ),
+            KeyboardButton(
+                text="🗒 Создать заметку",
+                web_app=WebAppInfo(
+                    url=add_get_params_to_url(
+                        "https://forms.yandex.ru/cloud/6718c34284227c4660549ad1/", user_data
+                    )
+                ),
+            ),
+            KeyboardButton(
+                text="🍳 Открыть заметки",
+                web_app=WebAppInfo(
+                    url=add_get_params_to_url(
+                        "https://tracker.yandex.ru/issues/7", user_data
                     )
                 ),
             ),
@@ -152,7 +214,82 @@ async def instruction(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
         disable_web_page_preview=True,
     )
 
+async def connect(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    user_data = get_user_data(update.effective_user)
 
+
+    text = (
+        f"Отправить запрос на подключение к системе <a href='https://marketbox.team/'>MarketBox</a> и начать предоставлять свои услуги в связке с командой профессионалов в сфере маркетинга и рекламы достаточно просто!\n"        
+        f"\n"
+        f"Нажмите ниже на кнопку:\n"  
+        f"💻 Заявка на регистрацию в системе\n"  
+        f"\n"
+        f"Укажите информацию о себе в полях формы и отправьте запрос на подключение.\n"  
+        
+    )
+
+    user_data = get_user_data(update.effective_user)
+
+    reply_markup = ReplyKeyboardMarkup.from_column(
+        [
+            KeyboardButton(
+                text="💻 Заявка на регистрацию в системе",
+                web_app=WebAppInfo(
+                    url="https://forms.yandex.ru/cloud/67160daee010db024de89cb0/?iframe=1"
+                ),
+            ),
+            
+        ]
+    )
+
+    await update.effective_message.reply_text(
+        text=text,
+        reply_markup=reply_markup,
+        parse_mode=ParseMode.HTML,
+        disable_web_page_preview=True,
+    )
+
+async def info(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    user_data = get_user_data(update.effective_user)
+
+
+    text = (
+        f"<a href='https://marketbox.team/'>MarketBox</a> - интегрированная система, которая <b>решает вопросы бизнеса</b> в сфере маркетинга и рекламы.\n"        
+        f"\n"
+        f"Система аккумулирует (объединяет) профессионалов и специалистов высокого уровня (<b>WaY BabaY</b>), распределяет, контролирует и анализирует работу над задачами для эффективной и слаженной работы в команде.\n"  
+        f"\n"
+        f"Для получения более подробной информации посетите наш сайт по кнопке ❓ О MarketBox.\n"  
+        
+    )
+
+    user_data = get_user_data(update.effective_user)
+
+    reply_markup = ReplyKeyboardMarkup.from_column(
+        [
+            KeyboardButton(
+                text="⭐️ Пройти опрос",
+                web_app=WebAppInfo(
+                    url=add_get_params_to_url(
+                        "https://forms.yandex.ru/cloud/6718d2e9e010db2dae4f22a9/", user_data
+                    )
+                ),
+            ),
+            KeyboardButton(
+                text="❓ О MarketBox",
+                web_app=WebAppInfo(
+                    url="https://marketbox.team/"
+                ),
+            ),
+            
+        ]
+    )
+
+    await update.effective_message.reply_text(
+        text=text,
+        reply_markup=reply_markup,
+        parse_mode=ParseMode.HTML,
+        disable_web_page_preview=True,
+    )
 
 async def get_data_from_mini_app(
     update: Update, context: ContextTypes.DEFAULT_TYPE
@@ -413,6 +550,18 @@ def run_bot(
     # handlers
     ## /start
     application.add_handler(CommandHandler("start", start))
+
+    ## /instruction
+    application.add_handler(CommandHandler("instruction", instruction))
+
+    ## /task
+    application.add_handler(CommandHandler("task", task))
+
+    ## /connect
+    application.add_handler(CommandHandler("connect", connect))
+
+    ## /info
+    application.add_handler(CommandHandler("info", info))
 
     ## get data from mini app
     application.add_handler(

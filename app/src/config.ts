@@ -4,7 +4,8 @@ export default defineConfig({
   // If you want to add language/currency localization – see ./examples/meditation as reference
 
   pages: [
-    {
+      /*
+      {
       slides: [
         // Быстрый старт
         {
@@ -224,7 +225,7 @@ export default defineConfig({
           button: '',
         },        
 
-/* 
+        /* 
         // image
         {
           media: {
@@ -344,10 +345,73 @@ export default defineConfig({
             content: 'Перейти к оформлению услуги',
             to: '/paywall',
           },
-        }, */
+        }, 
+      ],
+    }, */
+    {
+      slides: [
+        {
+          extends: 'action_slide',
+          title: 'Re-dress photos with AI',
+          description: 'Tap the button below to try',
+          actionButton: ['Re-dress', 'Applied'],
+          nextButton: 'Next',
+          media: [
+            {
+              type: 'image',
+              src: import('./assets/img/1_init.webp'),
+              // style: imageStyle,
+            },
+            {
+              type: 'image',
+              src: import('./assets/img/1_res.webp'),
+              // style: imageStyle,
+            },
+          ],
+        },
+        {
+          extends: 'action_slide',
+          title: 'Ready for an important meeting?',
+          description: 'Find perfect business suit',
+          actionButton: ['Re-dress', 'Applied'],
+          nextButton: 'Next',
+          media: [
+            {
+              type: 'image',
+              src: import('./assets/img/2_init.webp'),
+              // style: imageStyle,
+            },
+            {
+              type: 'image',
+              src: import('./assets/img/2_res.webp'),
+              // style: imageStyle,
+            },
+          ],
+        },
+        {
+          extends: 'action_slide',
+          title: "Let's go to rave party!",
+          description: 'Your friends will be impressed',
+          actionButton: ['Re-dress', 'Applied'],
+          nextButton: {
+            to: '/paywall',
+            content: 'Next',
+          },
+          media: [
+            {
+              type: 'image',
+              src: import('./assets/img/3_init.webp'),
+              // style: imageStyle,
+            },
+            {
+              type: 'image',
+              src: import('./assets/img/3_res.webp'),
+              // style: imageStyle,
+            },
+          ],
+        },
       ],
     },
-
     // paywall
     {
       extends: 'paywall',
