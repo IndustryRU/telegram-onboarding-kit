@@ -82,7 +82,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
                 text="🗒 Меню YALTA FRESH",
                 web_app=WebAppInfo(
                     url=add_get_params_to_url(
-                        "https://industryru.github.io/telegram-onboarding-kit/", user_data
+                        "https://disk.yandex.ru/i/VfS5EPkW6UUigg", user_data
                     )
                 ),
             ),
@@ -92,14 +92,14 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
                     url=add_get_params_to_url("https://forms.yandex.ru/cloud/68111da390fa7b25283b4f5b/", user_data)
                 ),
             ),
-            KeyboardButton(
-                text="ℹ️ Информация для Вас",
-                web_app=WebAppInfo(
-                    url=add_get_params_to_url(
-                        "https://industryru.github.io/telegram-onboarding-kit/", user_data
-                    )
-                ),
-            ),
+            # KeyboardButton(
+            #     text="ℹ️ Информация для Вас",
+            #     web_app=WebAppInfo(
+            #         url=add_get_params_to_url(
+            #             "https://industryru.github.io/telegram-onboarding-kit/", user_data
+            #         )
+            #     ),
+            # ),
             KeyboardButton(
                 text="⭐️ Оставить отзыв / предложение",
                 web_app=WebAppInfo(
