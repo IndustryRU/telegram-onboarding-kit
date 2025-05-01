@@ -127,6 +127,61 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         disable_web_page_preview=True,
     )
 
+
+async def menu(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    user_data = get_user_data(update.effective_user)
+
+    text = (
+        f"<a href='https://yalta-fresh.ru/'>YALTA FRESH</a> ♥️ Вас и по этой причине мы постарались сделать наш сервис удобным и практичным.\n"
+        f"Чиля на пляже под летним ласковым солнцем Вы всегда можете просмотреть актуальные цены на наши блюда и напитки.\n"
+        f"А еще лучше - сделать предзаказ через Меня, Вашего покорного слугу. Кстати, меня зовут ЯФ\n"
+        f"\n"
+        f"По предзаказу часто бывают очень аппетитные бонусы и приятные скидки, не упустите информацию об этом в нашем ТГ канале <a href='https://t.me/yalta_fresh'>Yalta Fresh</a>\n"
+        f"\n"
+        f"❓Как сделать предзаказ❓\n"
+        f"1. В нижнем меню нажмите на кнопку [Сделать онлайн предзаказ].\n"
+        f"2. В открывшейся форме выберите желаемые блюда и напитки.\n"
+        f"3. Нажмите [Далее].\n"
+        f"4. Введите контактные данные.\n"
+        f"5. Отправьте заявку.\n"
+        f"6. Чтобы мы приступили к заказу, в открывшемся окне оплаты внесите предоплату по карте или через ЮMoney.\n"
+        f"7. Ожидайте оповещения.\n"
+        f"8. Заберите заказ.\n"
+        f"\n"
+        f"Лучше всего взаимодействовать со мной через 📱 мобильное устройство.\n"
+
+    )
+
+    user_data = get_user_data(update.effective_user)
+
+    reply_markup = ReplyKeyboardMarkup.from_column(
+        [
+            KeyboardButton(
+                text="🗒 Меню YALTA FRESH",
+                web_app=WebAppInfo(
+                    url=add_get_params_to_url(
+                        "https://disk.yandex.ru/i/VfS5EPkW6UUigg", user_data
+                    )
+                ),
+            ),
+            KeyboardButton(
+                text="✍️ Сделать онлайн предзаказ",
+                web_app=WebAppInfo(
+                    url=add_get_params_to_url("https://forms.yandex.ru/cloud/68111da390fa7b25283b4f5b/", user_data)
+                ),
+            ),         
+            
+        ]
+    )
+
+    await update.effective_message.reply_text(
+        text=text,
+        reply_markup=reply_markup,
+        parse_mode=ParseMode.HTML,
+        disable_web_page_preview=True,
+    )
+
+
 async def instruction(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     user_data = get_user_data(update.effective_user)
 
